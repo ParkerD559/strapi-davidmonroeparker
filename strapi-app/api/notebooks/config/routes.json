@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/notebooks",
+      "handler": "Notebooks.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/notebooks/count",
+      "handler": "Notebooks.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/notebooks/:_id",
+      "handler": "Notebooks.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/notebooks",
+      "handler": "Notebooks.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/notebooks/:_id",
+      "handler": "Notebooks.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/notebooks/:_id",
+      "handler": "Notebooks.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

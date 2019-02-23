@@ -1,0 +1,33 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "notebooks",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "default": "",
+      "type": "string"
+    },
+    "content": {
+      "default": "",
+      "type": "text"
+    },
+    "url": {
+      "default": "",
+      "type": "string"
+    },
+    "active": {
+      "default": false,
+      "type": "boolean"
+    },
+    "tags": {
+      "collection": "tags",
+      "via": "notebooks"
+    }
+  }
+}

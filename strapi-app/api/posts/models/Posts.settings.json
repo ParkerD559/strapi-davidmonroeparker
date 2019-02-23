@@ -1,0 +1,40 @@
+{
+  "connection": "default",
+  "collectionName": "posts",
+  "info": {
+    "name": "posts",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "default": "",
+      "type": "string"
+    },
+    "content": {
+      "default": "",
+      "type": "text"
+    },
+    "posted": {
+      "default": "",
+      "type": "date"
+    },
+    "active": {
+      "default": false,
+      "type": "boolean"
+    },
+    "header": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "tags": {
+      "collection": "tags",
+      "dominant": true,
+      "via": "posts"
+    }
+  }
+}

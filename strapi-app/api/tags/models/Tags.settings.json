@@ -1,0 +1,26 @@
+{
+  "connection": "default",
+  "collectionName": "tags",
+  "info": {
+    "name": "tags",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "default": "",
+      "type": "string"
+    },
+    "posts": {
+      "collection": "posts",
+      "via": "tags"
+    },
+    "notebooks": {
+      "collection": "notebooks",
+      "via": "tags",
+      "dominant": true
+    }
+  }
+}
